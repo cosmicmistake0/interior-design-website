@@ -1,0 +1,115 @@
+/* REsets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+/* VARS */
+:root {
+  /* Logo */
+  --logo-font-mobile: 1.8rem;
+  --logo-font-tablet: 2.5rem;
+  --logo-font-desktop: 3rem;
+
+  /* Navigation */
+  --nav-font-mobile: 1rem;
+  --nav-font-tablet: 1.125rem;
+  --nav-font-desktop: 1.25rem;
+
+  /* CTA button */
+  --cta-font-mobile: 1rem;
+  --cta-font-tablet: 1.125rem;
+  --cta-font-desktop: 1.25rem;
+
+  /* Headings */
+  --h1-font-mobile: 2rem; /* ~32px */
+  --h1-font-tablet: 2.75rem; /* ~44px */
+  --h1-font-desktop: 3.5rem; /* ~56px */
+
+  --h2-font-mobile: 1.5rem;
+  --h2-font-tablet: 2rem;
+  --h2-font-desktop: 2.5rem;
+
+  /* Paragraph / main text */
+  --body-font-mobile: 1rem; /* 16px */
+  --body-font-tablet: 1.125rem; /* 18px */
+  --body-font-desktop: 1.25rem; /* 20px */
+  /* Base colors */
+  --bg-color: #f2f5f1; /* Soft off-white background */
+  --text-color: #1e2d24; /* Deep green-charcoal for main text */
+  --accent-color: #2f5d50; /* Rich muted green for accents/buttons */
+  --highlight-color: #d9e3dd; /* Subtle contrast/highlight */
+
+  /* Optional extras for layout */
+  --section-bg: #ffffff; /* Background of cards/sections */
+  --border-color: #bfc9c3; /* Light border for wireframe sections */
+  --button-text: #ffffff; /* Default button text color */
+}
+body {
+  background-color: var(--bg-color);
+}
+/* HEADER */
+#site-header {
+  background-color: var(--accent-color);
+  display: flex;
+  width: 100%;
+  padding: 1.5rem;
+}
+.nav {
+  justify-content: center;
+  grid-template-columns: 1fr auto 1fr;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+.nav-links {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  font-size: var(--nav-font-mobile);
+  justify-content: center;
+  color: var(--highlight-color);
+}
+.cta {
+  align-items: flex-start;
+  justify-content: flex-end;
+  display: flex;
+}
+.cta-btn {
+  padding: 0.6rem;
+  background-color: var(--highlight-color);
+  color: var(--accent-color);
+  border-radius: 2rem;
+}
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logo-text {
+  font-family: "Josefin Slab", serif;
+  color: var(--highlight-color);
+  font-size: var(--logo-font-mobile);
+  letter-spacing: 0.35rem;
+}
+/* Hero-section */
+#hero-section {
+  background-color: var(--highlight-color);
+}

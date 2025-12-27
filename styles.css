@@ -23,17 +23,17 @@ button {
 /* VARS */
 :root {
   /* Logo */
-  --logo-font-mobile: 1.8rem;
+  --logo-font-mobile: 1.2rem;
   --logo-font-tablet: 2.5rem;
   --logo-font-desktop: 3rem;
 
   /* Navigation */
-  --nav-font-mobile: 1rem;
+  --nav-font-mobile: 0.8rem;
   --nav-font-tablet: 1.125rem;
   --nav-font-desktop: 1.25rem;
 
   /* CTA button */
-  --cta-font-mobile: 1rem;
+  --cta-font-mobile: 0.8rem;
   --cta-font-tablet: 1.125rem;
   --cta-font-desktop: 1.25rem;
 
@@ -69,7 +69,7 @@ body {
   background-color: var(--accent-color);
   display: flex;
   width: 100%;
-  padding: 1.5rem;
+  padding: 0, 1.5rem;
 }
 .nav {
   justify-content: center;
@@ -91,6 +91,7 @@ body {
   align-items: flex-start;
   justify-content: flex-end;
   display: flex;
+  margin: 0.2rem;
 }
 .cta-btn {
   padding: 0.6rem;

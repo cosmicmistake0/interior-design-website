@@ -4,6 +4,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
@@ -21,22 +27,65 @@
           <a href="/" class="logo-text">ATRIA</a>
         </div>
 
-        <!-- Navigation links -->
-        <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
         <!-- CTA as a button -->
         <div class="cta">
-          <button class="cta-btn">Get in Touch</button>
+          <button class="hamburger" aria-label="Open menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 7L7 7M20 7L11 7"
+                stroke="#d9e3dd"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M20 17H17M4 17L13 17"
+                stroke="#d9e3dd"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+              <path
+                d="M4 12H7L20 12"
+                stroke="#d9e3dd"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              ></path>
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
 
     <main id="site-main">
-      <section id="hero-section"></section>
+      <section id="hero-section">
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Living made beautifully simple</h1>
+            <p>
+              Furniture and lighting crafted to transform your living spaces.
+            </p>
+            <div class="cta-btn-hero"></div>
+          </div>
+
+          <div class="hero-visuals">
+            <div class="visual couch">
+              <img src="/Interior deco images/couch2-bg.png" />
+            </div>
+
+            <div class="visual floor-lamp">
+              <img src="/Interior deco images/Floor-lamp-bg.png" />
+            </div>
+
+            <!-- <div class="visual hanging-lamp">
+              <img src="/Interior deco images/HANGING-LAMP3-BG.png" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+
       <section id="projects-section"></section>
       <section id="about-section"></section>
     </main>

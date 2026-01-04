@@ -306,12 +306,14 @@ svg {
   justify-content: center;
   display: flex;
   padding: 2rem;
+  overflow: hidden;
 }
 .testimonial-slide {
+  border: solid 2px var(--bg-color);
   color: var(--bg-color);
   border-radius: 1rem;
   padding: 1rem;
-  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 .thead {
   align-items: center;
@@ -320,7 +322,7 @@ svg {
 }
 .pfp {
   background-color: red;
-  width: 4rem;
+  width: 3rem;
   aspect-ratio: 1/1;
   border-radius: 50%;
   background-size: cover; /* zooms in to cover the whole circle */
@@ -398,4 +400,5 @@ svg {
 } */
 .swiper {
   display: flex;
+  width: 90%;
 }

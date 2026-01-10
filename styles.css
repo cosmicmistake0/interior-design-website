@@ -427,7 +427,7 @@ svg {
   width: 100%;
 
   font-size: var(--body-font-mobile);
-  color: var(--accent-color);
+  color: var(--text-color);
 }
 .bar {
   margin-bottom: 1rem;
@@ -435,6 +435,10 @@ svg {
   border-radius: 2rem;
   background-color: var(--accent-color);
   height: 0.2rem;
+}
+.container h3 {
+  font-size: var(--h2-font-mobile);
+  font-weight: 400;
 }
 /* about */
 #about-section {
@@ -515,4 +519,44 @@ svg {
   left: 10%;
   top: 10%;
   z-index: 1;
+}
+#about-values {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+
+  color: var(--text-color);
+  padding: 2rem;
+}
+#about-values span {
+  display: inline-flex;
+  width: 3rem;
+  background-color: var(--accent-color);
+  opacity: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg-color);
+  font-size: var(--h2-font-mobile);
+  font-weight: 400;
+}
+
+.value-item {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 2rem 1rem;
+  margin: 0.5rem 0;
+  background-color: var(--border-color);
+  border-radius: 1rem;
+}
+.value-item h3 {
+  font-weight: 400;
+  font-size: var(--h2-font-mobile);
+}
+#about-values button {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }

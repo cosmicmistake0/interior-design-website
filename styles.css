@@ -131,9 +131,9 @@ svg {
 }
 .hero-visuals {
   position: relative;
-  width: 26rem;
-  height: 6rem;
-  margin-top: 5rem;
+  width: min(80vw, 26rem);
+  aspect-ratio: 26 / 6;
+
   align-self: end;
 }
 .visual img {
@@ -160,7 +160,7 @@ svg {
 .shelve {
   width: 35%;
   z-index: 0;
-  top: -9rem;
+  top: -160%;
   transform: translateX(-50%);
 
   left: 50%;
@@ -189,8 +189,7 @@ svg {
 
   text-align: left;
 }
-.hero-text {
-}
+
 .cta-btn-hero {
   margin-top: 2rem;
 }
@@ -559,4 +558,44 @@ svg {
   margin: 1rem 0;
   background-color: var(--accent-color);
   color: var(--bg-color);
+}
+/* featured work section */
+#featured-work {
+  padding: 2rem;
+}
+.featured-work-text {
+  color: var(--text-color);
+}
+.featured-work-text h2 {
+  color: var(--accent-color);
+  font-size: var(--h2-font-mobile);
+  font-weight: 400;
+}
+.featured-work-text p {
+  padding: 1rem 0;
+}
+.work-card {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+.work-card h3 {
+  color: var(--text-color);
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.work-image {
+  border-radius: 1rem;
+  aspect-ratio: 1/0.6;
+  width: 100%;
+}
+.work-image img {
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }

@@ -40,7 +40,7 @@ const swiper = new Swiper(".testimonial-slider", {
   effect: "cards",
   grabCursor: true, // makes it draggable
   centeredSlides: true, // centers the active slide
-  loop: true, // optional, if you want infinite scrolling
+  // loop: true, // optional, if you want infinite scrolling
   cardsEffect: {
     slideShadows: false, // optional: remove shadow if you want
   },

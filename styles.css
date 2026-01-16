@@ -670,14 +670,19 @@ svg {
   padding-top: 2rem;
 }
 .form input {
+  color: var(--text-color);
   padding: 1rem;
   aspect-ratio: 8/1;
   border: none;
   border-radius: 1rem;
   border: var(--accent-color) solid 0.1rem;
   width: 100%;
+  background-color: var(--border-color);
 }
 .text-area textarea {
+  border: none;
+  color: var(--text-color);
+  background-color: var(--border-color);
   width: 100%;
   border-radius: 1rem;
   aspect-ratio: 2/1;
@@ -690,4 +695,38 @@ svg {
 .form button {
   background-color: var(--accent-color);
   color: var(--bg-color);
+}
+#site-footer {
+  display: grid;
+  padding: 2rem;
+  background-color: var(--accent-color);
+}
+/* footer */
+.instagram,
+.facebook,
+.twitter,
+.linkedin {
+  width: 2rem;
+  aspect-ratio: 1/1;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--highlight-color);
+}
+.footer-container ul {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+.footer-container h3 {
+  font-weight: 400;
+  font-size: var(--h2-font-mobile);
 }

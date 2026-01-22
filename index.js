@@ -28,6 +28,7 @@
 //   slidesPerView: 1,
 //   spaceBetween: 20,
 //   pagination: {
+
 //     el: ".swiper-pagination",
 //     clickable: true,
 //   },
@@ -45,4 +46,27 @@ const swiper = new Swiper(".testimonial-slider", {
     slideShadows: false, // optional: remove shadow if you want
   },
   slidesPerView: 1, // cards effect should usually show 1 slide fully
+});
+const hamMenu = document.querySelector(".ham-menu");
+const hamburger = document.querySelector(".hamburger");
+const menuLinks = document.querySelectorAll(".ham-menu a");
+
+hamburger.addEventListener("click", () => {
+  const expanded = hamburger.getAttribute("aria-expanded") === "true";
+
+  hamMenu.classList.toggle("active");
+
+  hamburger.setAttribute("aria-expanded", expanded ? "false" : "true");
+
+  document.body.classList.toggle("menu-open", !expanded);
+});
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamMenu.classList.remove("active");
+
+    hamburger.setAttribute("aria-expanded", "false");
+
+    document.body.classList.remove("menu-open");
+  });
 });

@@ -270,18 +270,22 @@ body.menu-open {
   width: 7rem;
 }
 #what-we-do {
+  background-color: var(--highlight-color);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 #what-we-do h2 {
   text-align: left;
   color: var(--accent-color);
   font-size: var(--h2-font-mobile);
 }
-.what-to-do-container {
+.what-we-do-container {
   padding: 1.4rem;
   justify-content: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 8rem 8rem 11rem;
+
+  grid-template-rows: 11rem 11rem 12rem;
   grid-template-areas:
     "one two"
     "one two"
@@ -322,9 +326,11 @@ body.menu-open {
   grid-area: one;
 }
 .cards-container2 {
+  padding-right: 0;
   grid-area: two;
 }
 .cards-container3 {
+  padding-right: 0;
   grid-area: three;
 }
 .cards img {
@@ -931,18 +937,37 @@ body.menu-open {
     grid-area: button;
   }
   .featured-work-gallery {
-    gap: 1rem;
+    gap: 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+
+    grid-template-columns: 50% 50%;
   }
   #what-we-do {
+    background-color: var(--highlight-color);
+    align-items: center;
     display: grid;
-    grid-template-rows: 5rem 5rem;
+    grid-template-areas: "txt cards cards ";
+    grid-template-columns: 40% 60%;
   }
-  .what-to-do-container {
-    border: red solid;
+  .what-we-do-container {
+    grid-template-rows: 6rem 6rem 8rem;
+    grid-area: cards;
   }
-  .what-to-do-container {
+  .what-we-do-text {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 2rem;
+    grid-area: txt;
+  }
+
+  .what-we-do-text h2 {
+    width: 100%;
+
+    text-align: left;
   }
 }
 

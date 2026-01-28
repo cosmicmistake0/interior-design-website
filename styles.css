@@ -76,8 +76,12 @@ body.menu-open {
   width: 100%;
   padding: 0.8rem 2rem;
 }
+.header-links {
+  display: none;
+}
+
 .nav {
-  height: 4rem;
+  height: 3rem;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   display: grid;
@@ -96,7 +100,7 @@ body.menu-open {
   background-color: var(--highlight-color);
   color: var(--accent-color);
   border-radius: 2rem;
-  font-size: var(--cta-font-mobile);
+  font-size: var(--body-font-mobile);
 }
 
 .logo {
@@ -106,7 +110,7 @@ body.menu-open {
 }
 .logo-text {
   font-family: "Josefin Slab", serif;
-  color: var(--highlight-color);
+  color: var(--bg-color);
   font-size: var(--logo-font-mobile);
   letter-spacing: 0.35rem;
 }
@@ -116,14 +120,13 @@ body.menu-open {
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   z-index: 3;
-  --button-color: #f2f5f1; /* your white color */
-  width: 3rem;
-  height: 3rem;
+  --button-color: #f2f5f1;
+
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: transparent; /* make button background invisible */
+  background: transparent;
   border: none;
   cursor: pointer;
 
@@ -180,7 +183,7 @@ body.menu-open {
   justify-items: center;
   display: grid;
   /* grid-template-rows: 1fr 1fr; */
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   padding-bottom: 0;
   /* background: linear-gradient(to top, transparent, var(--accent-color) 70%); */
   background-color: var(--accent-color);
@@ -191,7 +194,7 @@ body.menu-open {
 .hero-visuals {
   margin-top: 3rem;
   position: relative;
-  width: min(80vw, 26rem);
+  width: min(80vw, 30rem);
   aspect-ratio: 26 / 6;
 
   align-self: end;
@@ -264,10 +267,10 @@ body.menu-open {
   align-items: center;
 }
 .cta-container button {
-  font-size: var(--cta-font-mobile);
+  font-size: var(--body-font-mobile);
   margin: 2rem 0;
   height: auto;
-  width: 7rem;
+  width: auto;
 }
 #what-we-do {
   background-color: var(--highlight-color);
@@ -485,6 +488,9 @@ body.menu-open {
   display: flex;
   width: 90%;
 }
+.container {
+  max-width: 30rem;
+}
 .testimonial-text {
   display: flex;
   text-align: right;
@@ -562,6 +568,7 @@ body.menu-open {
 .about-image-container > * {
   border-radius: 1rem;
   width: 90%;
+  max-width: 30rem;
   /* width: 20rem; */
   aspect-ratio: 1/1;
 }
@@ -690,6 +697,7 @@ body.menu-open {
   gap: 1rem;
 }
 .contact-block {
+  max-height: 7rem;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -700,7 +708,7 @@ body.menu-open {
   display: flex;
 }
 .contact-icon {
-  width: 12%;
+  width: 3rem;
   border-radius: 50%;
   aspect-ratio: 1/1;
 }
@@ -720,6 +728,7 @@ body.menu-open {
   color: var(--accent-color);
 }
 .opening-hours {
+  max-height: 12rem;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -759,6 +768,7 @@ body.menu-open {
     box-shadow 0.3s ease;
 
   width: 100%;
+  max-height: 3rem;
   background-color: var(--border-color);
 }
 .form input:focus {
@@ -767,6 +777,7 @@ body.menu-open {
   outline: none;
 }
 .text-area textarea {
+  max-height: 12rem;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -866,6 +877,7 @@ body.menu-open {
   background-color: var(--accent-color);
   height: 40rem;
   width: 80%;
+  max-width: 20rem;
   z-index: 2;
   transition: 0.5s ease;
   border-radius: 1rem;
@@ -910,6 +922,15 @@ body.menu-open {
 }
 
 @media (min-width: 600px) {
+  html body p {
+    font-size: 1.125rem;
+  }
+  :root {
+    --h1-font-mobile: 3rem;
+    --h2-font-mobile: 2rem;
+    --body-font-mobile: 1.125rem;
+  }
+
   #about-section {
     flex-direction: row;
     gap: 1rem;
@@ -937,10 +958,14 @@ body.menu-open {
     grid-area: button;
   }
   .featured-work-gallery {
+    justify-content: space-between;
     gap: 2rem;
     display: grid;
 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .work-card {
+    max-width: 30rem;
   }
   #what-we-do {
     background-color: var(--highlight-color);
@@ -969,12 +994,86 @@ body.menu-open {
 
     text-align: left;
   }
+  .contact-block {
+    max-height: 5rem;
+  }
+  #testimonial {
+    background-color: var(--highlight-color);
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+  }
+
+  .container {
+    width: 60%;
+  }
 }
 
 @media (min-width: 768px) {
+  .hero {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav {
+    height: 3rem;
+  }
+  .hero-visuals {
+    margin-top: 8rem;
+    width: min(80vw, 28rem);
+  }
+  .what-we-do-container {
+    justify-content: end;
+    grid-template-rows: 8rem 8rem 9rem;
+  }
+  .what-we-do-text {
+  }
+
+  .what-we-do-text h2 {
+  }
 }
 
 @media (min-width: 1024px) {
+  html body p {
+    font-size: 1.25rem;
+  }
+
+  :root {
+    --h1-font-mobile: 3.5rem;
+    --h2-font-mobile: 2.5rem;
+    --body-font-mobile: 1.25rem;
+    --logo-font-mobile: 2.5rem;
+  }
+  .hero {
+    padding-top: 7rem;
+    justify-content: space-between;
+  }
+  .hero-visuals {
+    width: min(80vw, 35rem);
+  }
+  .hero-text {
+    max-width: 30rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav {
+    justify-content: space-between;
+    display: flex;
+
+    align-items: center;
+  }
+
+  .hero-visuals {
+  }
+  .header-links {
+    color: var(--highlight-color);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 1440px) {

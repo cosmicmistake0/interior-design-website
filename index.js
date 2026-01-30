@@ -32,16 +32,19 @@
 //     el: ".swiper-pagination",
 //     clickable: true,
 //   },
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
+
 // });
 const swiper = new Swiper(".testimonial-slider", {
   effect: "cards",
+
   grabCursor: true, // makes it draggable
   centeredSlides: true, // centers the active slide
   // loop: true, // optional, if you want infinite scrolling
+  autoplay: { delay: 3000 },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   cardsEffect: {
     slideShadows: false, // optional: remove shadow if you want
   },

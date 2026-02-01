@@ -23,33 +23,16 @@ button {
 /* VARS */
 :root {
   /* Logo */
-  --logo-font-mobile: 1.2rem;
-  --logo-font-tablet: 2.5rem;
-  --logo-font-desktop: 3rem;
-
-  /* Navigation */
-  --nav-font-mobile: 0.8rem;
-  --nav-font-tablet: 1.125rem;
-  --nav-font-desktop: 1.25rem;
-
-  /* CTA button */
-  --cta-font-mobile: 0.8rem;
-  --cta-font-tablet: 1.125rem;
-  --cta-font-desktop: 1.25rem;
+  --logo-font: 1.2rem;
 
   /* Headings */
-  --h1-font-mobile: 2rem; /* ~32px */
-  --h1-font-tablet: 2.75rem; /* ~44px */
-  --h1-font-desktop: 3.5rem; /* ~56px */
+  --h1-font: 2rem;
 
-  --h2-font-mobile: 1.5rem;
-  --h2-font-tablet: 2rem;
-  --h2-font-desktop: 2.5rem;
+  --h2-font: 1.5rem;
 
   /* Paragraph / main text */
-  --body-font-mobile: 1rem; /* 16px */
-  --body-font-tablet: 1.125rem; /* 18px */
-  --body-font-desktop: 1.25rem; /* 20px */
+  --body-font: 1rem;
+
   /* Base colors */
   --bg-color: #f2f5f1; /* Soft off-white background */
   --text-color: #1e2d24; /* Deep green-charcoal for main text */
@@ -100,7 +83,7 @@ body.menu-open {
   background-color: var(--highlight-color);
   color: var(--accent-color);
   border-radius: 2rem;
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
 }
 
 .logo {
@@ -111,7 +94,7 @@ body.menu-open {
 .logo-text {
   font-family: "Josefin Slab", serif;
   color: var(--bg-color);
-  font-size: var(--logo-font-mobile);
+  font-size: var(--logo-font);
   letter-spacing: 0.35rem;
 }
 .hamburger {
@@ -246,7 +229,7 @@ body.menu-open {
 .hero-text p {
   text-align: center;
   color: var(--button-text);
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
   /* margin-top: 0.1rem; */
   /* letter-spacing: 0.1rem; */
 
@@ -267,7 +250,7 @@ body.menu-open {
   align-items: center;
 }
 .cta-container button {
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
   margin: 2rem 0;
   height: auto;
   width: auto;
@@ -281,7 +264,7 @@ body.menu-open {
 #what-we-do h2 {
   text-align: left;
   color: var(--accent-color);
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
 }
 .what-we-do-container {
   grid-template-columns: 1fr 1fr;
@@ -302,7 +285,7 @@ body.menu-open {
 .what-we-do-text h2 {
   font-weight: 400;
   color: var(--text-color);
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
   padding-bottom: 1rem;
 }
 .what-we-do-text p {
@@ -374,10 +357,10 @@ body.menu-open {
   transition: height 0.5s;
 }
 .overlay p {
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
 }
 .overlay h3 {
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
 }
 .cards:hover img {
   transform: scale(1.2);
@@ -447,7 +430,6 @@ body.menu-open {
   padding: 1rem 0;
 }
 .date {
-  margin-top: rem;
   align-self: end;
   display: grid;
   justify-content: end;
@@ -503,7 +485,7 @@ body.menu-open {
   flex-flow: column;
   width: 100%;
 
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
   color: var(--text-color);
 }
 .bar {
@@ -514,7 +496,7 @@ body.menu-open {
   height: 0.2rem;
 }
 .container h3 {
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
   font-weight: 400;
 }
 /* about */
@@ -531,7 +513,7 @@ body.menu-open {
   width: 100%;
 }
 .about-text h2 {
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
   font-weight: 400;
   color: var(--accent-color);
   width: 100%;
@@ -545,7 +527,7 @@ body.menu-open {
   flex-direction: column;
 }
 .about-text p {
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
   color: var(--text-color);
 }
 .about-subheading {
@@ -623,7 +605,7 @@ body.menu-open {
   justify-content: center;
   align-items: center;
   color: var(--bg-color);
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
   font-weight: 400;
   padding: 0.5rem;
 }
@@ -639,7 +621,7 @@ body.menu-open {
 }
 .value-item h3 {
   font-weight: 400;
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
 }
 #about-values button {
   padding: 1rem;
@@ -656,7 +638,7 @@ body.menu-open {
 }
 .featured-work-text h2 {
   color: var(--accent-color);
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
   font-weight: 400;
 }
 .featured-work-text p {
@@ -695,7 +677,7 @@ body.menu-open {
 .contact-us-heading h2 {
   width: 100%;
   color: var(--text-color);
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
   font-weight: 400;
   text-align: center;
 }
@@ -727,7 +709,7 @@ body.menu-open {
 }
 .contact-block-text h3 {
   font-weight: 400;
-  font-size: var(--body-font-mobile);
+  font-size: var(--body-font);
 }
 .contact-block-text > :nth-child(2) {
   margin-top: 1rem;
@@ -872,7 +854,7 @@ body.menu-open {
 }
 .footer-container h3 {
   font-weight: 400;
-  font-size: var(--h2-font-mobile);
+  font-size: var(--h2-font);
 }
 .ham-menu {
   display: flex;
@@ -936,9 +918,9 @@ body.menu-open {
     font-size: 1.125rem;
   }
   :root {
-    --h1-font-mobile: 3rem;
-    --h2-font-mobile: 2rem;
-    --body-font-mobile: 1.125rem;
+    --h1-font: 3rem;
+    --h2-font: 2rem;
+    --body-font: 1.125rem;
   }
 
   #about-section {
@@ -950,6 +932,7 @@ body.menu-open {
   }
   #about-values {
     gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "one one two two"
       "three three three three"
@@ -1111,12 +1094,18 @@ body.menu-open {
   html body p {
     font-size: 1.25rem;
   }
-
+  .hero-text {
+    width: 100%;
+    max-width: none;
+  }
+  .hero-text h1 {
+    font-size: var(--h1-font);
+  }
   :root {
-    --h1-font-mobile: 3.5rem;
-    --h2-font-mobile: 2.5rem;
-    --body-font-mobile: 1.25rem;
-    --logo-font-mobile: 2.5rem;
+    --h1-font: 3.5rem;
+    --h2-font: 2.5rem;
+    --body-font: 1.25rem;
+    --logo-font: 2.5rem;
   }
   .hero {
     padding-top: 7rem;
@@ -1126,7 +1115,7 @@ body.menu-open {
     width: min(80vw, 35rem);
   }
   .hero-text {
-    max-width: 30rem;
+    max-width: 35rem;
   }
   .about-image-container {
     max-width: fit-content;
@@ -1164,4 +1153,23 @@ body.menu-open {
 }
 
 @media (min-width: 1440px) {
+  :root {
+    --h1-font: 3.75rem;
+    --h2-font: 2.75rem;
+
+    --body-font: 1.375rem;
+    --logo-font: 2.75rem;
+  }
+  .container {
+    max-width: 50rem;
+  }
+  .swiper {
+    aspect-ratio: 1/0.35;
+  }
+  .about-image-container > * {
+    max-width: 35rem;
+  }
+  .what-we-do-container {
+    grid-template-rows: 9rem 9rem 15rem;
+  }
 }

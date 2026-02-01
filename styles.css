@@ -839,11 +839,11 @@ body.menu-open {
   grid-area: logo;
 }
 .quick-link {
-  margin-top: 1rem;
+  margin: 2rem 0;
   grid-area: link;
 }
 .contact {
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   flex-wrap: wrap;
 
@@ -852,9 +852,11 @@ body.menu-open {
   align-items: start;
   grid-area: contact;
 }
-
+.footer-container li {
+  padding: 0.5rem 0;
+}
 .footer-container ul {
-  margin-top: 0.3rem;
+  margin-top: 1rem;
   display: flex;
 
   flex-direction: column;
